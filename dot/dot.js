@@ -19,7 +19,7 @@ dot.loadCommnad = function ()
         for (var j = 0; j < 10; j++)
         {
             str += '<td onclick="dot.select(this)">';
-            if ( i == 0 && j == 0) str += '<span class="font-gray">시작</span>';
+            if ( i == 0 && j == 0) str += '<span class="dot-start-font">시작</span>';
             str += '</td>';
         }
         str += '</tr>';
