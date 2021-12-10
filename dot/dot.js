@@ -18,7 +18,9 @@ dot.loadCommnad = function ()
         str += '<tr>';
         for (var j = 0; j < 10; j++)
         {
-            str += '<td onclick="dot.select(this)"></td>';
+            str += '<td onclick="dot.select(this)">';
+            if ( i == 0 && j == 0) str += '<span class="font-gray">시작</span>';
+            str += '</td>';
         }
         str += '</tr>';
     }
